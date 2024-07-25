@@ -1,0 +1,18 @@
+/* ButtonGroup.css */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-group button {
+    display: flex;
+    align-items: center;
+    margin: 0 10px; /* Adjust margin as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .button-group i {
+    margin-right: 8px; /* Space between icon and text */
+  }
+  
