@@ -1,7 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import ButtonGroup from '../../components/ButtonGroup';
+//import 'bootstrap/dist/css/bootstrap.min.css'
+
+import { Container } from 'react-bootstrap'
+
 
 export default function HeroSection() {
     return (
@@ -18,18 +21,20 @@ export default function HeroSection() {
                     AR/VR Researcher, and Artist
                     </h2>
                 </div>
-                <div className="btn-contacts">
-                    <button>
-                        <FontAwesomeIcon icon={faEnvelope} size="2x"/>
-                    </button>
-                    <button>
-                        <FontAwesomeIcon icon={faGithub} size="2x" />
-                    </button>
-                    <button>
-                        <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
-                    </button>
-                </div>
-                <button className="btn btn-primary">Resume</button>
+                <Container>
+                    <div className="social-media-icons">
+                        <a href="mailto:sarannjac@gmail.com">
+                            <FontAwesomeIcon icon={faEnvelope} />
+                        </a>
+                        <a href="https://github.com/saj62">
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/sarah-ann-jacob">
+                            <FontAwesomeIcon icon={faLinkedinIn} />
+                        </a>
+                        <button className="btn btn-primary">Resume</button>
+                    </div>
+                </Container>
             </div>
             <div className="hero--img">
                 <img src="./img/hero_img.png" alt="HeroSection" />

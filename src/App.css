@@ -32,6 +32,7 @@ p {
   font-family: "Poppins", "bold";
   display: inline-block;
   padding: 8px 18px;
+  margin: 5px;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -39,7 +40,7 @@ p {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  border-radius: 25px;
+  border-radius: 50px;
   --webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -90,16 +91,11 @@ p {
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
-  fill: var(--dark-purple);
 }
 
 .btn-contacts:hover {
   color: var(--dark-purple);
   background-color: var(--ice-blue);
-}
-
-.svg--icons {
-  fill: var(--dark-purple);
 }
 
 /* Global CSS */
@@ -242,17 +238,67 @@ h5 {
 .hero--img > img {
   width: 75%;
   height: 75%;
-
 }
 
+.social-media-icons a {
+  color: var(--ice-blue);
+  font-size: 2rem;
+  padding: 15px;
+  margin: 5px;
+  background-color: var(--dark-purple);
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  display: inline-flex;
+  --webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: background-color 0.5s;
+  --webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
 
+.social-media-icons a:hover {
+  color: var(--dark-purple);
+  font-size: 2rem;
+  background-color: var(--ice-blue);
+}
 
 /* Hero Section Style Ends */
+
+/* About Section Style Begins */
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--light-purple);
+  align-self: stretch;
+  padding-left: 100px;
+}
+
+.about--section--box {
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.timeline-header {
+  display: inline-flex;
+  gap: 75px;
+  align-items: flex-start;
+}
+
 
 /* About, Projects, Research */
 .section--title {
   color: var(--dark-purple);
   font-size: 64px;
+  padding-left: 100px;
   text-align: left;
   font-style: normal;
   font-weight: 700;

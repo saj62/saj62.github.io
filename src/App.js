@@ -3,10 +3,11 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './Pages/Home/NavBar';
 import Home from "./Pages/Home/Homescreen"
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-library.add(fas, fass, fasds, faTwitter, faFontAwesome, faHatCowboy, faHatChef, faPlateUtensils)
+//library.add(fas, fass, fasds, faTwitter, faFontAwesome, faHatCowboy, faHatChef, faPlateUtensils)
 
 function App() {
   return (
