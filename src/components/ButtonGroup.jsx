@@ -9,13 +9,13 @@ const ButtonGroup = () => {
   return (
     <div className="btn-contacts">
             <button>
-        <FontAwesomeIcon icon={faEnvelope} size="2x"/>
+        <FontAwesomeIcon className="svg--icons" icon={faEnvelope} size="2x"/>
       </button>
       <button>
-        <FontAwesomeIcon icon={faGithub} size="2x" />
+        <FontAwesomeIcon className="svg--icons" icon={faGithub} size="2x" />
       </button>
       <button>
-        <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
+        <FontAwesomeIcon className="svg--icons" icon={faLinkedinIn} size="2x"/>
       </button>
     </div>
   );

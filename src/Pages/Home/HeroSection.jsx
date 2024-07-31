@@ -18,6 +18,17 @@ export default function HeroSection() {
                     AR/VR Researcher, and Artist
                     </h2>
                 </div>
+                <div className="btn-contacts">
+                    <button>
+                        <FontAwesomeIcon icon={faEnvelope} size="2x"/>
+                    </button>
+                    <button>
+                        <FontAwesomeIcon icon={faGithub} size="2x" />
+                    </button>
+                    <button>
+                        <FontAwesomeIcon icon={faLinkedinIn} size="2x"/>
+                    </button>
+                </div>
                 <button className="btn btn-primary">Resume</button>
             </div>
             <div className="hero--img">

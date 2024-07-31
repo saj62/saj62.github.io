@@ -90,11 +90,16 @@ p {
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
+  fill: var(--dark-purple);
 }
 
 .btn-contacts:hover {
   color: var(--dark-purple);
   background-color: var(--ice-blue);
+}
+
+.svg--icons {
+  fill: var(--dark-purple);
 }
 
 /* Global CSS */
@@ -239,6 +244,9 @@ h5 {
   height: 75%;
 
 }
+
+
+
 /* Hero Section Style Ends */
 
 /* About, Projects, Research */
