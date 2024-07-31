@@ -125,7 +125,7 @@ h3 {
 /* Heading 4 */
 h4 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 30px;
 }
 
@@ -135,6 +135,13 @@ h5 {
   font-weight: 500;
   line-height: 30px;
   font-style: italic;
+}
+
+/* Heading 6 */
+h6 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
 }
 
 /* Section Title*/
@@ -271,7 +278,6 @@ h5 {
 /* Hero Section Style Ends */
 
 /* About Section Style Begins */
-
 .about-text {
   display: flex;
   flex-direction: column;
@@ -291,8 +297,17 @@ h5 {
   display: inline-flex;
   gap: 75px;
   align-items: flex-start;
+  padding-bottom: 25px;
 }
 
+.vertical-timeline-education {
+  align-items: flex-start;
+}
+
+.vertical-timeline-element-title {
+  color: var(--dark-purple);
+}
+/* About Section Style Ends */
 
 /* About, Projects, Research */
 .section--title {
