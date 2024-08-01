@@ -160,6 +160,7 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9999;
 }
 
 .navbar--items > ul {
@@ -200,8 +201,8 @@ h6 {
 .hero--section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 262.5px 45px 262.5px;
-  padding-left: 262.5px;
+  padding: 230px 45px 262.5px;
+  padding-left: 230px;
   padding-top: 100px;
   align-items: center;
   justify-content: space-between;
@@ -240,11 +241,13 @@ h6 {
 .hero--img {
   display: flex;
   padding-top: 50px;
+  flex-direction: column;
 }
 
 .hero--img > img {
   width: 75%;
   height: 75%;
+  flex-direction: column;
 }
 
 .social-media-icons a {
@@ -285,6 +288,7 @@ h6 {
   color: var(--light-purple);
   align-self: stretch;
   padding-left: 100px;
+  padding-bottom: 100px;
 }
 
 .about--section--box {
@@ -295,19 +299,104 @@ h6 {
 
 .timeline-header {
   display: inline-flex;
-  gap: 75px;
+  gap: 50px;
   align-items: flex-start;
   padding-bottom: 25px;
+  z-index: 0;
 }
 
 .vertical-timeline-education {
   align-items: flex-start;
+  z-index: 0;
+  margin-right: 100px;
 }
 
 .vertical-timeline-element-title {
   color: var(--dark-purple);
+  z-index: 0;
 }
 /* About Section Style Ends */
+
+
+/* Skills Section Style Starts */
+.skills--section {
+  background-color: var(--bg);
+  z-index: 0;
+}
+
+.skills--lang--title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-align: justify;
+  margin: auto;
+}
+
+.lang-lib-skills {
+  color: var(--dark-purple);
+  font-size: 3rem;
+  padding: 15px;
+  margin-left: 75px;
+  margin-right: 75px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+}
+
+
+.lang-lib-skills:hover{
+  opacity: 5;
+  box-shadow: var(--dark-purple);
+}
+
+.tech-icons {
+  border-style: solid;
+  border-width: 4px;
+  padding: 25px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border-color: var(--light-purple);
+  border-radius: 50px;
+  opacity: 75%;
+  display: inline-flex;
+}
+
+.tech-icons h2 {
+  padding-left: 20px;
+}
+
+.tech-icons:hover {
+  opacity: 5;
+  box-shadow: var(--dark-purple);
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
+  border: 3px solid var(--light-purple) !important;
+  font-style: var(--light-purple);
+  box-shadow: 0px 0px 10px 5px var(--light-purple);
+}
+
+.tech-text {
+  color: var(--dark-purple);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  margin-left: 20px;
+}
+
+.tech-text:hover {
+  color: var(--light-purple);
+  margin-left: 20px;
+  opacity: 100;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.svg-icon {
+  width: 50px;
+  height: 50px;
+  fill: var(--light-purple);
+}
+
+
 
 /* About, Projects, Research */
 .section--title {
