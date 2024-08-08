@@ -90,16 +90,6 @@ function NavBar() {
                             smooth={true}
                             offset={-70}
                             duration={500}
-                            to="Research"
-                            className="navbar--content"
-                            >Research</Link>
-                        </li>
-                        <li>
-                            <Link onClick={closeMenu} activeClass="navbar--active-content"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
                             to="Artwork"
                             className="navbar--content"
                             >Artwork</Link>

@@ -12,70 +12,69 @@ export default function Skills() {
     return (
         <section id="Skills" className="skills--section">
             <div className="hero--section--content--box">
-                <h1 className="section--title">Skills</h1>
                 <div className="skills--lang--title">
                     <h2>Languages and Libraries</h2>
                 </div>
                 <div className="lang-lib-skills">
                     <Container>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faJava}/>
+                            <FontAwesomeIcon icon={faJava} className="svg-icon"/>
                                 <div>
-                                    <h2>Java</h2>
+                                    <h3>Java</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faPython}/>
+                            <FontAwesomeIcon icon={faPython} className="svg-icon"/>
                                 <div>
-                                    <h2>Python</h2>
+                                    <h3>Python</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
                             <Logo className="svg-icon"/>
                                 <div>
-                                    <h2>C++</h2>
+                                    <h3>C++</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faHashtag}/>
+                            <FontAwesomeIcon icon={faHashtag} className="svg-icon"/>
                                 <div>
-                                    <h2>C#</h2>
+                                    <h3>C#</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faJs}/>
+                            <FontAwesomeIcon icon={faJs} className="svg-icon"/>
                                 <div>
-                                    <h2>JavaScript</h2>
+                                    <h3>JavaScript</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faReact}/>
+                            <FontAwesomeIcon icon={faReact} className="svg-icon"/>
                                 <div>
-                                    <h2>React</h2>
+                                    <h3>React</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faHtml5}/>
+                            <FontAwesomeIcon icon={faHtml5} className="svg-icon"/>
                                 <div>
-                                    <h2>HTML</h2>
+                                    <h3>HTML</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faCss3Alt}/>
+                            <FontAwesomeIcon icon={faCss3Alt} className="svg-icon"/>
                                 <div>
-                                    <h2>CSS</h2>
+                                    <h3>CSS</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faNode}/>
+                            <FontAwesomeIcon icon={faNode} className="svg-icon"/>
                                 <div>
-                                    <h2>Node.js</h2>
+                                    <h3>Node.js</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faDatabase}/>
+                            <FontAwesomeIcon icon={faDatabase} className="svg-icon"/>
                                 <div>
-                                    <h2>SQL</h2>
+                                    <h3>SQL</h3>
                                 </div>
                         </div>
                     </Container>
@@ -86,39 +85,39 @@ export default function Skills() {
                 <div className="lang-lib-skills">
                     <Container>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faGitAlt}/>
+                            <FontAwesomeIcon icon={faGitAlt} className="svg-icon"/>
                                 <div>
-                                    <h2>Git</h2>
+                                    <h3>Git</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faAws}/>
+                            <FontAwesomeIcon icon={faAws} className="svg-icon"/>
                                 <div>
-                                    <h2>AWS</h2>
+                                    <h3>AWS</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faUnity}/>
+                            <FontAwesomeIcon icon={faUnity} className="svg-icon"/>
                                 <div>
-                                    <h2>Unity</h2>
+                                    <h3>Unity</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faFigma}/>
+                            <FontAwesomeIcon icon={faFigma} className="svg-icon"/>
                                 <div>
-                                    <h2>Figma</h2>
+                                    <h3>Figma</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faUbuntu}/>
+                            <FontAwesomeIcon icon={faUbuntu} className="svg-icon"/>
                                 <div>
-                                    <h2>Ubuntu</h2>
+                                    <h3>Ubuntu</h3>
                                 </div>
                         </div>
                         <div className="tech-icons">
-                            <FontAwesomeIcon icon={faBook}/>
+                            <FontAwesomeIcon icon={faBook} className="svg-icon"/>
                                 <div>
-                                    <h2>Jupyter Notebook</h2>
+                                    <h3>Jupyter Notebook</h3>
                                 </div>
                         </div>
                     </Container>
