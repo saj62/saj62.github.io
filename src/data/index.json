@@ -2,7 +2,7 @@
     "portfolio": [
         {
             "id": "1",
-            "src": "./img/plant-planner-logo.png",
+            "src": "./img/plant-planner.png",
             "title": "Plant Planner",
             "description": "Developed an app that takes away the stress by automatically creating watering and fertilizing schedules based off of a plant’s need. Simply type in the name of your plant and Plant Planner will automatically add its watering schedule to your Google Calendar.",
             "link": "View"

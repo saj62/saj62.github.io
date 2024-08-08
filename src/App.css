@@ -400,12 +400,23 @@ h6 {
 
 
 /* Projects Style Starts */
+.projects--title {
+  color: var(--dark-purple);
+  font-size: 64px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  display: flex;
+  align-items: flex-start;
+}
+
 .portfolio--section {
   display: flex;
-  padding: 112px 85px;
+  padding: 100px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 80px;
+  gap: 30px;
 }
 .portfolio--container-box {
   display: flex;
@@ -417,7 +428,6 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 21.3px;
 }
 .portfolio--section--container {
   display: flex;
@@ -430,17 +440,21 @@ h6 {
   border-radius: 8px;
   width: 100%;
 }
+
 .portfolio--section--img > img {
   width: 100%;
+  height: 400px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
+
 .portfolio--section--card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  flex: 1 0 0;
   height: auto;
-  background: var(--ice-blue);
+  background: var(--white);
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-top-left-radius: 12px;
@@ -448,6 +462,7 @@ h6 {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
+
 .portfolio--section--card--content {
   display: flex;
   padding: 32px;
@@ -473,16 +488,56 @@ h6 {
   padding: 10px;
   border-radius: 50px;
 }
+
+.modal-btn {
+  border: 0px;
+  background-color: var(--white);
+  z-index: 990;
+} 
+
 .portfolio--link:hover {
   color: var(--light-purple);
-  background-color: var(--white);
+  background-color: var(--ice-blue);
   transition: background-color 0.5s;
 }
 
+.fullscreen-overlay {
+  position: fixed;      /* Position the element relative to the viewport */
+  top: 0;               /* Align to the top of the screen */
+  left: 0;              /* Align to the left of the screen */
+  right: 0;             /* Align to the right of the screen */
+  bottom: 0;            /* Align to the bottom of the screen */
+  width: 100%;          /* Ensure it covers the full width */
+  height: 100%;         /* Ensure it covers the full height */
+  background-color: var(--bg);  /* Optional: Background color with opacity */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modalContainer .modal-title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
 /* Projects Style Ends */
 
-
-/* About, Projects, Research */
+/* About, Projects */
 .section--title {
   color: var(--dark-purple);
   font-size: 64px;
