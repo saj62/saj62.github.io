@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Global CSS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -167,7 +171,7 @@ h6 {
   list-style: none;
   display: flex;
   align-items: flex-start;
-  gap: 42.667px;
+  gap: 45px;
   text-decoration: none;
 }
 
@@ -177,7 +181,7 @@ h6 {
 
 /* Navbar Content */
 .navbar--content {
-  color: var(--dark-purple);
+  color: var(--light-purple);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -199,15 +203,7 @@ h6 {
 
 /* Hero Section Style */
 .hero--section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 230px 45px;
-  padding-left: 150px;
-  padding-top: 100px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  background-color: var(--bg);
+  
 }
 
 .hero--section--content--box {
