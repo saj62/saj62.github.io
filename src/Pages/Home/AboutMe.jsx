@@ -1,4 +1,5 @@
 import Timeline from "./Timeline";
+import Skills from "./Skills";
 
 export default function AboutMe() {
     return (
@@ -16,6 +17,9 @@ export default function AboutMe() {
                     <div className="timeline-text">
                         <Timeline />
                     </div>
+                </div>
+                <div>
+                    <Skills />
                 </div>
             </div>
         </section>
