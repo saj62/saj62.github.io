@@ -10,14 +10,12 @@ export default function Projects() {
     const [openModal, setOpenModal] = useState(false)
 
     return (
-        <section className="portfolio--section" id="Projects">
-            <h1 className="projects--title">Projects</h1>
-            <div className="portfolio--container--box">
-            </div>
-            <div className="portfolio--section--container">
+        <section className="flex flex-col lg:grid-cols-2 pt-20 justify-between space-10" id="Projects">
+            <h1 className="text-purple sm:ml-4 sm:mt-4 lg:ml-10 lg:mt-10">Projects</h1>
+            <div className="pb-10 px-5 flex sm:flex-col lg:flex-row lg:space-x-5">
                 {data?.portfolio?.map((item, index) => (
-                    <div key={index} className="portfolio--section--card">
-                        <div className="portfolio--section--img">
+                    <div key={index} className="mt-7 portfolio--section--card">
+                        <div className="portfolio--section--img object-cover w-full h-400">
                             <img src={item.src} alt="Placeholder"/>
                         </div>
                         <div className="portfolio--section--card--content">
@@ -28,7 +26,7 @@ export default function Projects() {
                             <div>
                             <button className="modal-btn" onClick={() => {
                                 setOpenModal(true);
-                            }}><h3 className="text-sm portfolio--link">
+                            }}><h3 className="text-md portfolio--link">
                             {item.link}
                             <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                         </h3></button>

@@ -8,7 +8,7 @@ import { Container } from 'react-bootstrap'
 
 export default function HeroSection() {
     return (
-        <section id="heroSection" className="bg-bg flex flex-col lg:flex-row items-center justify-center py-20">
+        <section id="heroSection" className="flex flex-col lg:flex-row items-center justify-center py-20">
 
             <div className="flex flex-col p-6 m-1 ml-3">
                 <div className="">

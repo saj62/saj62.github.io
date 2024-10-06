@@ -12,6 +12,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function App() {
   return (
     <div className="App">
+      <circle></circle>
+      <circle></circle>
+      <circle></circle>
+      <circle></circle>
+      <circle></circle>
+      <circle></circle>
+      <circle></circle>
+      <circle></circle>
+
       <Router>
         <div>
           <NavBar />

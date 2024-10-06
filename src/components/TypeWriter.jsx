@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 
 const Typewriter = () => {
   const words = [
-    "Computer Science Major",
-    "AR/VR Researcher",
-    "Artist",
-    "Full Stack Developer",
-    "Software Engineer"
+    " Computer Science Major",
+    "n AR/VR Researcher",
+    "n Artist",
+    " Full Stack Developer",
+    " Software Engineer"
   ];
   const [currentWord, setCurrentWord] = useState("");
   const [index, setIndex] = useState(0);
@@ -14,7 +14,7 @@ const Typewriter = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   // Static line that stays while the word changes
-  const staticLine = "I'm a ";
+  const staticLine = "I'm a";
 
   useEffect(() => {
     const type = () => {
