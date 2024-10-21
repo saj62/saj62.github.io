@@ -18,7 +18,7 @@
         },
         {
             "id": "2",
-            "src": "./img/portfolio-img.png",
+            "src": "./img/portfolio-img.PNG",
             "title": "Portfolio Website",
             "description": "Personal portfolio website using React.js, TypeScript, and HTML/CSS to showcase my technical and creative work.",
             "details": [
