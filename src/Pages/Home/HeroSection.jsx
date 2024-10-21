@@ -28,7 +28,8 @@ export default function HeroSection() {
                         <a href="https://www.linkedin.com/in/sarah-ann-jacob">
                             <FontAwesomeIcon icon={faLinkedinIn} />
                         </a>
-                        <button className="btn btn-primary">Resume</button>
+                        <a href="../../../Sarah-Jacob-Resume.pdf" className="btn btn-primary">Resume
+                        </a>
                     </div>
                 </div>
             </div>

@@ -318,9 +318,6 @@ h6 {
 
 
 /* Hero Section Style */
-.hero--section {
-  
-}
 
 .hero--section--content--box {
   display: flex;
@@ -364,7 +361,6 @@ h6 {
 
 .social-media-icons a {
   color: var(--ice-blue);
-  font-size: 2rem;
   padding: 15px;
   margin: 5px;
   background-color: var(--dark-purple);
@@ -382,6 +378,15 @@ h6 {
   -moz-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
+  display: inline-block;
+  padding: 8px 18px;
+  margin: 5px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24 px;
+  cursor: pointer;
+  text-align: center;
 }
 
 .social-media-icons a:hover {
@@ -532,12 +537,12 @@ h6 {
 }
 .portfolio--section--img {
   border-radius: 8px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .portfolio--section--img > img {
-  /* width: 100%;
-  height: 400px; */
+  /* width: 100%; */
+  /* height: 200px; */
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -630,4 +635,82 @@ h6 {
   line-height: 60px;
   display: flex;
   align-items: flex-start;
+}
+
+
+/* Hamburger menu  */
+
+.nav__hamburger {
+  display: none;
+  width: 1.875rem;
+  height: 1.313rem;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+.nav__hamburger__line {
+  display: block;
+  height: 0.188rem;
+  width: 100%;
+  background-color: var(--light-purple);
+  border-radius: 0.625rem;
+  transition: all ease-in-out 0.2s;
+}
+
+.nav__hamburger:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav__hamburger {
+    display: flex;
+    z-index: 200;
+  }
+  .navbar--items {
+    display: flex;
+  }
+  .navbar--items {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255);
+    top: -20rem;
+    left: 0;
+    width: 100%;
+    transition: all ease-in-out 0.4s;
+  }
+  .navbar--items ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 0 0.6rem;
+    z-index: -100;
+  }
+  .navbar--items ul li {
+    text-align: center;
+  }
+  .navbar--items ul li a {
+    padding: 0.5rem;
+  }
+  .navbar--items {
+    z-index: -1000;
+  }
+  .navbar--items.active {
+    top: 30px;
+  }
+  .nav__hamburger.active :nth-child(1) {
+    transform: rotate(45deg) translate(0.45rem, 0.1875rem);
+  }
+
+  .nav__hamburger.active :nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav__hamburger.active :nth-child(3) {
+    transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+  }
 }

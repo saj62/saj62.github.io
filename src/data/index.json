@@ -2,17 +2,67 @@
     "portfolio": [
         {
             "id": "1",
-            "src": "./img/plant-planner.png",
-            "title": "Plant Planner",
-            "description": "Android app that automatically creates watering and fertilizing schedules based off of a plant’s need. Simply type in the name of your plant and Plant Planner will automatically add its watering schedule to your Google Calendar.",
-            "link": "View"
+            "src": "./img/score-snag.png",
+            "title": "Score Snag",
+            "description": "Web app that converts YouTube MIDI piano videos into high-quality sheet music, allowing musicians to easily download PDF scores through accurate transcription and seamless video processing.",
+            "details": [
+                "- Utilized React.js, TailwindCSS, and MaterialUI to create a web app that transcribes YouTube MIDI piano videos into sheet music, providing an accessible and affordable solution for musicians to download high-quality PDF scores.",
+                "- Developed an efficient backend using Google Colab and pymusicxml to identify and transcribe piano notes based on video characteristics, enabling the accurate conversion of videos into MusicXML files for seamless music notation.",
+                "- Converted Python code into a scalable API that handles POST requests for music transcription, enhancing the app's performance and allowing users to easily obtain transcriptions.",
+                "- Implemented video parsing techniques to overcome inconsistencies in video formats by identifying piano keys through aspect ratios and visual effects, ensuring accurate transcription across diverse MIDI piano videos."
+            ],
+            "dates": "Oct 2024 (HackUTA 6 Project)",
+            "technologies": "Python, Google Colab, MusicXML, POST API, React.js, TailwindCSS, MaterialUI",
+            "link": "View Project",
+            "url": "https://github.com/MichaelZhao21/hacktua24"
         },
         {
             "id": "2",
+            "src": "./img/portfolio-img.png",
+            "title": "Portfolio Website",
+            "description": "Personal portfolio website using React.js, TypeScript, and HTML/CSS to showcase my technical and creative work.",
+            "details": [
+                "- Developed a personal portfolio website using a frontend tech stack of React.js, TypeScript, and HTML/CSS to showcase my technical and creative work.",
+                "- Designed and mocked up the website layout and user interface using Figma, focusing on creating a visually appealing and intuitive experience that reflects my passion for both software development and design.",
+                "- Implemented responsive design principles to ensure the website is accessible and visually appealing on various devices and screen sizes.",
+                "- Integrated interactive elements and animations to enhance user engagement and provide a dynamic browsing experience, demonstrating my skills in front-end development and user experience design."
+            ],
+            "dates": "Jun 2024 - Oct 2024",
+            "technologies": "React.js, TypeScript, HTML/CSS",
+            "link": "View Project",
+            "url": "https://github.com/saj62/saj62.github.io"
+        },
+        {
+            "id": "3",
+            "src": "./img/plant-planner.png",
+            "title": "Plant Planner",
+            "description": "Android app that automatically creates watering and fertilizing schedules based off of a plant’s need. Simply type in the name of your plant and Plant Planner will automatically add its watering schedule to your Google Calendar.",
+            "details": [
+                "- Utilized Java, MySQL, Git, and Android Studio in a collaborative team of 4 students to develop a mobile app that provides efficiency in plant care by allowing users to input plant details and generate a specialized watering and fertilizing schedule which can be exported to Google Calendar.",
+                "- Developed plant search page algorithm by integrating Perenual REST API with MySQL database to allow application to efficiently showcase 10,000+ plants for users to select.",
+                "- Created and maintained user-authentication system using Google Sign-In and integrated with MySQL database.",
+                "- Presented project to a panel of 8 judges, recruiters, and an audience of over 400 people."
+            ],
+            "dates": "Sep 2023 - Dec 2023",
+            "technologies": "Java, MySQL, Git, Android Studio, Perenual API",
+            "link": "View Project",
+            "url": "https://github.com/acm-projects/Plant-Planner"
+        },
+        {
+            "id": "4",
             "src": "./img/gatekept.png",
             "title": "GateKept",
             "description": "iOS and Android App that is designed to connect users with local attractions that more niche and worthwile visiting.",
-            "link": "View"
+            "details": [
+                "- Developed a social media app using React Native and Tailwind CSS that curates niche attractions based on local reviews and a rating algorithm, enhancing the travel experience for users.",
+                "- Designed an immersive user interface with Figma, prioritizing user engagement and ease of navigation to facilitate seamless exploration of hidden gems.",
+                "- Overcame initial challenges in setting up the React Native environment and connecting our GitHub repository, gaining valuable experience in mobile app development.",
+                "- Planned future integrations with platforms like Eventbrite and Booking.com, aiming to connect users with local events and enhance the app's functionality and reach."
+            ],
+            "dates": "Mar 2024 - Mar 2024",
+            "technologies": "Java, React Native, JavaScript, HTML/CSS",
+            "link": "View Project",
+            "url": "https://github.com/saj62/GateKept"
         }
     ]
 }

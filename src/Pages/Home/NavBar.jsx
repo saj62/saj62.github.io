@@ -1,9 +1,10 @@
-import { useState } from "react";
-import { Link } from "react-scroll";
-
+import { useState, useEffect } from "react";
+import { Link as RouterLink, useLocation } from 'react-router-dom';
+import { scroller } from 'react-scroll';
 
 function NavBar() {
   const [navActive, setNavActive] = useState(false);
+  const location = useLocation();
 
   const toggleNav = () => {
     setNavActive(!navActive);
@@ -13,31 +14,54 @@ function NavBar() {
     setNavActive(false);
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        closeMenu();
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (window.innerWidth <= 1200) {
+      closeMenu();
+    }
+  }, []);
+
+  useEffect(() => {
+    // If on the home page, check if there's a section to scroll to from state
+    if (location.pathname === '/' && location.state?.targetSection) {
+      scroller.scrollTo(location.state.targetSection, {
+        smooth: true,
+        offset: -70, // Adjust based on your navbar height
+        duration: 500,
+      });
+    }
+  }, [location]);
+
   return (
-    <nav className="w-full flex items-center justify-between px-6 py-4 bg-white shadow-lg">
+    <nav className="sticky top-0 w-full flex items-center justify-between px-6 py-4 bg-white shadow-lg z-50">
       <div className="flex-shrink-0">
-        {/* Ensures the logo stays the same size across all screen sizes */}
-        <img className="w-16 h-auto" src="./img/Group.svg" alt="Sarah's Logo" />
+        <RouterLink to="/" onClick={closeMenu}>
+          <img className="w-16 h-auto" src="./img/Group.svg" alt="Sarah's Logo" />
+        </RouterLink>
       </div>
 
-      {/* Hamburger menu for smaller screens */}
-      <div className="lg:hidden">
-        <button onClick={toggleNav} className="focus:outline-none">
-          {navActive ? (
-            // Close (X) button when the menu is active
-            <span className="text-3xl"></span>
-          ) : (
-            // Hamburger icon
-            <div className="space-y-1">
-              <span className="block w-6 h-1 bg-light-purple"></span>
-              <span className="block w-6 h-1 bg-light-purple"></span>
-              <span className="block w-6 h-1 bg-light-purple"></span>
-            </div>
-          )}
-        </button>
-      </div>
+      <a
+        className={`nav__hamburger ${navActive ? "active" : ""}`}
+        onClick={toggleNav}
+      >
+        <span className="nav__hamburger__line nav"></span>
+        <span className="nav__hamburger__line"></span>
+        <span className="nav__hamburger__line"></span>
+      </a>
 
-      {/* Navigation links */}
       <div
         className={`lg:flex lg:items-center lg:space-x-8 absolute lg:relative top-0 left-0 w-full lg:w-auto lg:bg-transparent bg-white transition-transform transform ${
           navActive ? "translate-y-0" : "-translate-y-full"
@@ -45,74 +69,58 @@ function NavBar() {
       >
         <ul className="flex flex-col lg:flex-row items-center lg:space-x-8 p-8 lg:p-0">
           <li>
-            <Link
+            {/* Link to the Home section */}
+            <RouterLink
+              to="/"
+              state={{ targetSection: "heroSection" }}
               onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="heroSection"
               className="navbar--content text-lg py-2 lg:py-0"
             >
               Home
-            </Link>
+            </RouterLink>
           </li>
           <li>
-            <Link
+            {/* Link to AboutMe section */}
+            <RouterLink
+              to="/"
+              state={{ targetSection: "AboutMe" }}
               onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="AboutMe"
               className="navbar--content text-lg py-2 lg:py-0"
             >
               About
-            </Link>
+            </RouterLink>
           </li>
           <li>
-            <Link
+            {/* Link to Skills section */}
+            <RouterLink
+              to="/"
+              state={{ targetSection: "Skills" }}
               onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="Skills"
               className="navbar--content text-lg py-2 lg:py-0"
             >
               Skills
-            </Link>
+            </RouterLink>
           </li>
           <li>
-            <Link
+            {/* Link to Projects section */}
+            <RouterLink
+              to="/"
+              state={{ targetSection: "Projects" }}
               onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="Projects"
               className="navbar--content text-lg py-2 lg:py-0"
             >
               Projects
-            </Link>
+            </RouterLink>
           </li>
           <li>
-            <Link
+            {/* Route to the artwork page */}
+            <RouterLink
+              to="/artwork"
               onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="Artwork"
               className="navbar--content text-lg py-2 lg:py-0"
             >
               Artwork
-            </Link>
+            </RouterLink>
           </li>
         </ul>
       </div>
