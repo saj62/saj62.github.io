@@ -715,3 +715,27 @@ h6 {
     transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
   }
 }
+
+/* LOADING BAR */
+.loading-bar {
+  align-items: center;
+  height: 4px; /* Adjust height as needed */
+  background-color: #5D5D81; /* Adjust color as needed */
+  z-index: 10000; /* Ensures it’s above the navbar */
+  width: 120px;
+  height: 20px;
+  border-radius: 20px;
+  background:
+   linear-gradient(var(--dark-purple) 0 0) 0/0% no-repeat
+   var(--ice-blue);
+  animation: l1 2s infinite linear;
+}
+@keyframes l1 {
+  100% {background-size:100%}
+}
+
+.loading-bar-progress {
+  height: 100%;
+  transition: width 0.2s ease;
+  border-radius: 20px;
+}

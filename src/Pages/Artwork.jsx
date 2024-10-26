@@ -62,7 +62,6 @@ function Artwork() {
                                 onMouseLeave={() => setHoveredIndex(null)}
                             >
                                 <img src={drawing} alt={`Artwork ${index}`} className="w-full object-cover" />
-                                {/* Display the filename without extension and replace "-" with spaces on hover */}
                                 {hoveredIndex === index && (
                                     <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white">
                                         {getFileNameWithoutExtension(drawing)}

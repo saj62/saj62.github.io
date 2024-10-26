@@ -5,6 +5,7 @@ import Footer from "../Footer";
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { scroller } from 'react-scroll';
+// import LoadingBar from "../LoadingBar";
 
 export default function Home () {
     const location = useLocation();
@@ -35,3 +36,37 @@ export default function Home () {
         </>
     )
 }
+
+
+// const LandingPage = () => {
+//     const [loading, setLoading] = useState(true);
+//     const [progress, setProgress] = useState(0);
+
+//     useEffect(() => {
+//         if (loading) {
+//             const interval = setInterval(() => {
+//                 setProgress((prev) => {
+//                     if (prev >= 100) {
+//                         clearInterval(interval);
+//                         setLoading(false);
+//                         return 100;
+//                     }
+//                     return prev + 10; // Increment the loading progress by 10% each interval
+//                 });
+//             }, 300); // Adjust time interval as needed
+//         }
+//     }, [loading]);
+
+//     if (loading) {
+//         return <LoadingBar progress={progress} />;
+//     }
+
+//     return (
+//         <>
+//             <HeroSection />
+//             <AboutMe />
+//             <Projects />
+//             <Footer />
+//         </>
+//     );
+// };

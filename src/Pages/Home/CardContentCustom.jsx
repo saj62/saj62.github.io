@@ -4,7 +4,7 @@ import { X } from 'lucide-react';
 function CardContentCustom({ closeModal, project }) {
     return (
         <div className="fixed inset-0 bg-bg bg-opacity-75 flex justify-center items-center z-50"> 
-            <div className="flex flex-col rounded-lg w-11/12 max-w-3xl bg-white p-6 lg:p-10 m-20 overflow-scroll h-2/3"> 
+            <div className="flex flex-col rounded-lg w-11/12 max-w-4xl bg-white p-6 lg:p-10 m-20 overflow-scroll h-4/5"> 
                 {/* Close Button */}
                 <div className="relative flex justify-end mb-4">
                     <button onClick={() => closeModal(false)}>
