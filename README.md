@@ -1,3 +1,3 @@
-# Sarah's Pesonal Website
+# 🌺 Sarah's Pesonal Website 🌺
 
-🚧 Currently under construction! 🚧
+You can checkout my website at: [https://saj62.github.io/](https://saj62.github.io/)
